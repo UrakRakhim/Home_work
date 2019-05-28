@@ -1,0 +1,117 @@
+#Log_Block{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 150px;
+	/*padding-right: 550px;*/
+}
+fieldset{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 50px;
+	background-color: white;
+	border:  0px solid rgba(0,0,0,0.3);
+}
+#Enter{
+	margin-top: 15px;
+}
+body{
+	background-color: lightgrey;
+}
+input{
+	width: 450px;
+	height:60px;
+}
+#Enter{
+	color: white;
+	background-color: #1E90FF;
+	margin-top: 30px;
+}
+h1{
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+#Reset_Pas{
+	text-decoration: none;
+	color: #1E90FF;
+}
+#Reg_Block{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 100px;
+	margin-top: 50px;
+	
+	/*padding-left: 550px;*/
+}
+#General{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+/*--------------*/
+#g{	margin-top: -20px;
+	color: #D0D0D0;
+}
+#Register{
+	margin-top: -10px;
+	color: #585858;
+	font-size: 55px;
+}
+
+
+#Reg{
+/*	padding-bottom: 10px;
+	padding-bottom: 10px;*/
+	padding-bottom: -20px;
+	padding-left:150px; 
+
+}
+#But_Con{
+	color:white;
+	font-size: 20px;
+	background-color: #1E90FF;
+	padding-top:10px; 
+	width: 605px;
+	height:60px;
+	margin-top:20px; 
+}
+#Photo{
+	margin-top: 30px;
+	margin-right: 50px;
+	display: block;
+	border-radius: 60px;
+	height: 90px;
+	width: 90px;
+	float: left;
+	margin-right: -100px;
+	border-color: lightgrey;
+}
+#REG_GEN{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#article{
+	margin-top: 150px;
+	margin-right: -340px;
+	padding-bottom: 20px;
+
+	/*float: left;*/
+	/*padding-bottom: 20px;*/
+
+}
+#Seg_Block{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 130px;
+	margin-top: 50px;
+}
+::-webkit-input-placeholder {font-size: 20px;}
+input{
+	font-size: 20px;
+}

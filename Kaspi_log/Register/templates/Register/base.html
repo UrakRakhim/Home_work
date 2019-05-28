@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'Register/extra.css' %}">
+	<title>Вход в личный кабинет и регистрация</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'Register/image.png' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	{% if  Error %}
+	<div>{{error}}</div>
+	{% endif %}
+	<div id="General">
+		<div id="Log_Block">
+			<form method="POST">
+				{% csrf_token %}
+				<fieldset>
+					<h1>Уже зарегистрированы</h1>
+					
+					<!-- <input id="your_phone" type="text" name="your_phone" placeholder="Мобильный телефон">
+					<input id="your_password" type="password" name="your_phone" placeholder="Пароль"> -->
+
+					{{form}}
+		    		<input type="submit" value="Войти" id="Enter" >
+					
+					<a href="" id="Reset_Pas">Забыли пароль?</a>
+				</fieldset>
+			</form>
+		</div>
+		<div id="Reg_Block">
+			<fieldset>
+					<h1>Впервые на Kaspi.kz?</h1>
+					<h2><pre>Чтобы продолжить, необходимо зарегистрироваться 
+	
+(получить логин и пароль).Это бесплатно.</pre></h2>
+		    		<a href="{% url 'Reg' %}"><input type="submit" value="Зарегистрироваться" id="Enter" ></a>
+				
+			</fieldset>
+		</div>
+	</div>
+
+</body>
+<script>
+
+</script>
+</html>

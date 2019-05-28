@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'Register/extra.css' %}">
+	<title>Регистрация</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'Register/image.png' %}">
+</head>
+<body>
+		<div id="REG_GEN">
+			<img src="{% static 'Register/image.png' %}" id="Photo">
+			<p id="article">Мобильный телефон → Дата рождения → Пароль</p>
+				<div id="Seg_Block">
+					
+				<form method="POST">
+				{% csrf_token %}
+				<fieldset >
+					<h1 id="Register" >Регистрация</h1>
+					<input type="text" name="phone_num" placeholder="Мобильный телефон" id="Reg" value="+7" >
+		    		<input type="submit" value="Продолжить" id="But_Con">
+					
+					<p id="Reset_Pas g" >Мы отправим SMS-код</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
