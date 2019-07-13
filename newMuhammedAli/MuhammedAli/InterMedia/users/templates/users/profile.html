@@ -1,0 +1,31 @@
+{% extends 'Watch_film/base.html' %}
+{% load static %}
+{%block content%}
+    <div class="">
+        <a> <b>Name:</b>{{ user.username }}</a>
+        <br>
+        <br>
+        <br>
+      <img src="{{user.profile.image.url}}" alt='{{ user.username}}' width="300px;" style="border-radius:30px;" title="{{ user.username }}">
+{#     please  READ DOCUMENTATION ABOUT LOADING IMAGE#}
+    <br>
+        <a ><b>E-mail address:</b>{{ user.email }}</a>
+    <hr>
+    <br>
+    </div>
+
+     <form method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        <fieldset class="form-group">
+            <legend class="leg1">Profile Info</legend>
+            {{u_form }}
+            {{ p_form }}
+{#            {{ form|crispy }}#}
+        </fieldset>
+    <div class="Buston">
+        <button class="btn-send" type="submit">Update</button>
+    </div>
+    </form>
+
+{% endblock content %}
+

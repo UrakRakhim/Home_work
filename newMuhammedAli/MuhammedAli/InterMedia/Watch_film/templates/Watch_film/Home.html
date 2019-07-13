@@ -1,0 +1,14 @@
+{% extends 'Watch_film/base.html' %}
+{% block content %}
+    {% for Top_film in Top_films %}
+       <article>
+           <div class="post">
+            <h1 >Title<strong style="color:crimson">{{ Top_film.title}}</strong></h1>
+            <p>Content:{{Top_film.content}}</p>
+            <p> Date Posted:{{ Top_film.date_posted|date:"F d,Y" }}</p>
+            <p> Author: {{ Top_film.author }}</p>
+           </div>
+       </article>
+    {% endfor %}
+
+{% endblock content %}
