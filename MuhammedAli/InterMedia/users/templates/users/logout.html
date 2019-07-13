@@ -1,0 +1,12 @@
+{% extends 'Watch_film/base.html' %}
+{%load static %}
+<link rel="stylesheet" type="text/css" href="{% static  'users/extra.css' %}">
+{#{% load crispy_forms_ %}#}
+{% block content %}
+<h1>You have been Logout</h1>
+
+    <div class="For_Sign_In">
+        <p>Already has account<a class="Sign_in" href="{% url 'login' %}">Sign In</a> </p>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends 'Watch_film/base.html' %}
+{%load static %}
+<link rel="stylesheet" type="text/css" href="{% static  'users/extra.css' %}">
+{#{% load crispy_forms_ %}#}
+{% block content %}
+<div class="container-section">
+    <form method="POST">
+        {%csrf_token%}
+        <fieldset class="form-group">
+            <legend class="leg1">Join to us</legend>
+            {{form.as_p }}
+{#            {{ form|crispy }}#}
+        </fieldset>
+    <div class="Button">
+        <button class="btn-send" type="submit">Sign Up</button>
+    </div>
+    </form>
+    <div class="For_Sign_In">
+        <p>Already has account<a class="Sign_in" href="{% url 'login' %}">Sign In</a> </p>
+    </div>
+</div>
+{% endblock content %}
